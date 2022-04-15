@@ -23,13 +23,15 @@ public class App extends Application {
         //Инициализация SDK
         builder = new PBHelper.Builder(this, secretKey, merchantId)
                 //Выбор платежной системы
-                .setPaymentSystem(Constants.PBPAYMENT_SYSTEM.EPAYWEBKZT)
+                .setPaymentSystem(Constants.PBPAYMENT_SYSTEM.NONE)
                 //Выбор валюты платежа
                 .setPaymentCurrency(Constants.CURRENCY.KZT)
                 //Дополнительная информация пользователя
                 .setUserInfo(email, phone)
                 //Активация автоклиринга
                 .enabledAutoClearing(true)
+                //Запрашивать Frame вместо платежной страницы
+                .setFrameRequired(true) //false по умолчанию
                 //Для активации режима тестирования
                 .enabledTestMode(true)
                 //Для передачи информации от платежного гейта
