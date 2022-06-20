@@ -34,7 +34,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
 
     //Указываем зависимость на JAVA SDK
-    implementation 'com.github.paybox:sdk_android_input:1.0.3.9'
+    implementation 'com.github.paybox:sdk_android_input:1.0.4.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
